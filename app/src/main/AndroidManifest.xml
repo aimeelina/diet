@@ -38,6 +38,7 @@
         </provider>
         <activity android:name=".CommunityDetail"/>
         <activity android:name=".FifteenActivity"/>
+        <activity android:name=".FifteenActivity2"/>
         <activity android:name=".MyPage"/>
         <activity android:name=".Activity_meal"/>
         <activity android:name=".Friends"/>

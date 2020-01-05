@@ -34,6 +34,7 @@
             android:layout_marginTop="10dp"
             app:tabTextAppearance="@style/TabTextSize"
             app:tabIndicatorColor="@color/white"
+            app:tabTextColor="@color/grey2"
             app:tabSelectedTextColor="@color/round_green"
             app:tabMode="scrollable">
 

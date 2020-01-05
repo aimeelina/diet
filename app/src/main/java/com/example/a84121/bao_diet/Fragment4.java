@@ -21,7 +21,7 @@ import android.widget.TextView;
 public class Fragment4 extends Fragment {
     private TextView textView;
     RoundImageView user;
-    Button me_data,my_page,my_page2,setting,me_buy,me_collect,btn_message;
+    Button me_data,my_page,my_page2,setting,me_buy,me_collect,btn_message,me_body;
 
     //    @Nullable
     @Override
@@ -35,6 +35,7 @@ public class Fragment4 extends Fragment {
         me_collect=(Button)view.findViewById(R.id.me_collect);
         setting=(Button)view.findViewById(R.id.btn_setting);
         btn_message=(Button)view.findViewById(R.id.btn_message);
+        me_body=(Button)view.findViewById(R.id.me_body);
         click();
         return view;
 
@@ -52,6 +53,13 @@ public class Fragment4 extends Fragment {
             @Override
             public void onClick(View mView) {
                 Intent mIntent=new Intent(getActivity(), FifteenActivity.class);//没有任何参数（意图），只是用来传递数据
+                startActivity(mIntent);
+            }
+        });
+        me_body.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View mView) {
+                Intent mIntent=new Intent(getActivity(), FifteenActivity2.class);//没有任何参数（意图），只是用来传递数据
                 startActivity(mIntent);
             }
         });
